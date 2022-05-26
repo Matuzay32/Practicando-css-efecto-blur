@@ -275,11 +275,11 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
-.sectionAbout> .contenedorTextoAbout > .contenedorTitulo > h5,
+.sectionAbout > .contenedorTextoAbout > .contenedorTitulo > h5,
 h2,
-h3,h1 {
+h3,
+h1 {
   color: #ffffff;
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
@@ -289,7 +289,7 @@ h3,h1 {
   justify-content: center;
   align-self: center;
 }
-.sectionAbout > .contenedorTextoAbout > .contenedorP{
+.sectionAbout > .contenedorTextoAbout > .contenedorP {
   color: #ffffff;
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
@@ -302,9 +302,7 @@ h3,h1 {
   display: flex;
 }
 
-
-
-.contenedorTextoAbout{
+.contenedorTextoAbout {
   background-color: rgba(255, 255, 255, 0.274);
   border-radius: 40px;
   backdrop-filter: blur(30px);
@@ -317,7 +315,6 @@ h3,h1 {
   padding-right: 1rem;
   padding-bottom: 5rem;
   padding-top: 2.5rem;
-  
 }
 
 /* Anim img and particulas */
@@ -342,7 +339,7 @@ h3,h1 {
   height: 100vh;
   opacity: 0.3;
   position: absolute;
-  top:50%;
+  top: 50%;
 
   animation: moveImg 100s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
