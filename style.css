@@ -11,7 +11,6 @@ body {
   background-position: "center";
 }
 
-
 /* Estilos header */
 header {
   width: 100%;
@@ -83,6 +82,7 @@ header > ul > li > a {
   width: 30%;
   color: rgb(46, 46, 46);
   background-color: rgba(255, 255, 255, 0.521);
+  backdrop-filter: blur(10px);
   transition: width 2s, transform 2s, background-color 3s, color 4s;
 }
 .inputSearch {
@@ -101,8 +101,6 @@ header > ul > li > a {
 
   outline: none;
 }
-
-
 
 /* Comienza cards Styles  */
 .contenedorCard {
@@ -179,7 +177,6 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
 
 /* pagina de registro */
 .sectionForm {
@@ -270,75 +267,111 @@ h4 {
   transition: width 2s, transform 2s, background-color 3s, color 4s;
 }
 
-
-
 /* Pagina about */
-
-
-.sectionAbout{
+.sectionAbout {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 3rem;
+  flex-wrap: wrap;
+  
 }
+.sectionAbout> .contenedorTextoAbout > .contenedorTitulo > h5,
+h2,
+h3,h1 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.sectionAbout > .contenedorTextoAbout > .contenedorP{
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+  align-self: center;
+  font-size: large;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+
+
+
+.contenedorTextoAbout{
+  background-color: rgba(255, 255, 255, 0.274);
+  border-radius: 40px;
+  backdrop-filter: blur(30px);
+  width: 60%;
+  bottom: 10px;
+  height: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  
+}
+
 /* Anim img and particulas */
-.burbujas{
-display: flex;
-flex-flow: row;
-flex-wrap: wrap;
+.burbujas {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   width: 100%;
 }
-.burbuja{
+.burbuja {
   border-radius: 10px;
-  background: rgba(255, 0, 0, 0.527);
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   left: 5%;
   position: absolute;
   bottom: 0;
-  animation: burbujas 10s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite ;
-} 
-.burbujas>img{
-object-fit: cover;
-width: 100%;
-height: 100vh;
-opacity: 0.3;
-
-animation: moveImg 100s cubic-bezier(0.165, 0.84, 0.44, 1) infinite ;
+  animation: burbujas 10s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
 }
+.burbujas > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+  position: absolute;
+  top:50%;
 
-
-
-
-@keyframes moveImg{
-  0%{
+  animation: moveImg 100s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+/* Animaciones de foto y particulas */
+@keyframes moveImg {
+  0% {
     width: 40%;
   }
 
-  50%{
+  50% {
     background-position-x: center;
   }
-  
-  100%{
+
+  100% {
     background-position-x: right;
   }
 }
 
-@keyframes burbujas{
-  0%{
-    bottom: 0;
+@keyframes burbujas {
+  0% {
+    top: 0;
   }
 
-  50%{
-    opacity: .4;
+  50% {
+    opacity: 0.4;
   }
-  
-  100%{
-    bottom: 100vh;
+
+  100% {
+    top: 100vh;
     opacity: 0;
   }
 }
@@ -407,5 +440,3 @@ footer > div {
   font-weight: 500;
   transform: translateY(10px);
 }
-
-
