@@ -326,13 +326,13 @@ h1 {
   width: 100%;
 }
 .burbuja {
-  border-radius: 10px;
+  border-radius: 50%;
   width: 5px;
   height: 5px;
   left: 5%;
   position: absolute;
   bottom: 0;
-  animation: burbujas 10s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  box-shadow: inset 6px 5px 17px 18px #28212182;
 }
 .burbujas > img {
   object-fit: cover;
@@ -369,7 +369,7 @@ h1 {
   }
 
   100% {
-    top: 200%;
+    top: 170%;
     display: none;
   }
 }
