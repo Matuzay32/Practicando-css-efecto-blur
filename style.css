@@ -315,6 +315,7 @@ h1 {
   padding-right: 1rem;
   padding-bottom: 5rem;
   padding-top: 2.5rem;
+  z-index: 1000;
 }
 
 /* Anim img and particulas */
@@ -326,8 +327,8 @@ h1 {
 }
 .burbuja {
   border-radius: 10px;
-  width: 1px;
-  height: 1px;
+  width: 5px;
+  height: 5px;
   left: 5%;
   position: absolute;
   bottom: 0;
@@ -368,8 +369,8 @@ h1 {
   }
 
   100% {
-    top: 100vh;
-    opacity: 0;
+    top: 200%;
+    display: none;
   }
 }
 
