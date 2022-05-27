@@ -1,5 +1,4 @@
 var burbujas = document.getElementById("burbujas");
-
 const creacionBurbuja = (
   burbujas,
   velocidad = 60,
