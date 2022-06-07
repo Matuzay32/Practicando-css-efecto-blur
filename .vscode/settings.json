@@ -4,5 +4,9 @@
     "titleBar.activeBackground": "#6F078B",
     "titleBar.activeForeground": "#FEFBFF"
   },
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[javascript]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxFileSize": 500
+  }
 }
