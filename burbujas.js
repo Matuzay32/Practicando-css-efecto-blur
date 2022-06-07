@@ -5,7 +5,7 @@ const creacionBurbuja = (
   posicion = 90,
   coloresGrises = 255,
   tamaño = 5,
-  cantidad = 1,
+  cantidad = 90,
   opacidad = 0.5
 ) => {
   for (let index = 0; index < cantidad; index++) {
@@ -25,4 +25,4 @@ const creacionBurbuja = (
   }
 };
 
-creacionBurbuja(burbujas, 20, 95, 1000, 10, 90, 0.6);
+creacionBurbuja(burbujas);
